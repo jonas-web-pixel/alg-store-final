@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Alg Store</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ALG <span>STORE</span></div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Acerca de</a>
+            <a href="privacy.html">Privacidad</a>
+            <a href="contact.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main style="padding: 50px 10%; max-width: 800px; margin: auto; background: white; margin-top: 20px; border-radius: 10px; text-align: center;">
+        <h1 style="color: var(--dz-red);">Contáctanos</h1>
+        <p>¿Tienes preguntas o necesitas ayuda? Estamos aquí para ti.</p>
+        
+        <div style="margin-top: 30px; padding: 20px; border: 1px solid #eee; border-radius: 8px;">
+            <h3>Soporte por correo electrónico</h3>
+            <p>Puedes comunicarte con nosotros directamente en:</p>
+            <p style="font-weight: bold; color: var(--dz-green);">algstore.contact@gmail.com</p>
+            <p style="font-size: 0.9rem; color: #666;">Nuestro objetivo es responder a todas las consultas dentro de 24 a 48 horas.</p>
+        </div>
+
+        <form action="https://formsubmit.co/algstore.contact@gmail.com" method="POST" style="margin-top: 30px; display: flex; flex-direction: column; gap: 15px; max-width: 400px; margin-left: auto; margin-right: auto; text-align: left;">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="¡Nuevo mensaje de Alg Store!">
+
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email" id="email" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+            
+            <label for="message">Mensaje:</label>
+            <textarea name="message" id="message" rows="5" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+            
+            <button type="submit" style="background: var(--dz-green); color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;">Enviar Mensaje</button>
+        </form>
+    </main>
+   <footer>
+        <p>&copy; 2026 Alg Store</p>
+        <div class="lang-switch" style="margin-top: 20px;">
+            <a href="../contact.html" style="color: #bbb; text-decoration: none; margin: 0 10px;">English</a> | 
+            <a href="../ar/contact.html" style="color: #bbb; text-decoration: none; margin: 0 10px;">العربية</a> | 
+            <a href="../fr/contact.html" style="color: #bbb; text-decoration: none; margin: 0 10px;">Français</a> |
+            <a href="contact.html" style="color: white; text-decoration: none; margin: 0 10px;">Español</a> |
+            <a href="../de/contact.html" style="color: #bbb; text-decoration: none; margin: 0 10px;">Deutsch</a>
+        </div>
+    </footer>
+</body>
+</html>
