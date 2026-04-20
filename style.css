@@ -1,6 +1,6 @@
 :root {
-    --dz-green: #006633;
-    --dz-red: #d21034;
+    --tech-blue: #00A8CC;
+    --vault-navy: #0A2540;
     --dark: #333;
     --light: #f4f4f4;
 }
@@ -20,7 +20,7 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border-bottom: 4px solid var(--dz-green);
+    border-bottom: 4px solid var(--tech-blue);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,11 +29,13 @@ header {
 .logo {
     font-size: 1.8rem;
     font-weight: 800;
-    color: var(--dz-green);
+    color: var(--tech-blue);
     letter-spacing: -1px;
 }
 
-.logo span { color: var(--dz-red); }
+.logo span { 
+    color: var(--vault-navy); 
+}
 
 nav a {
     margin-left: 20px;
@@ -43,13 +45,18 @@ nav a {
 }
 
 .rate-btn {
-    background: var(--dz-red);
+    background: var(--vault-navy);
     color: white;
     border: none;
     padding: 8px 15px;
     border-radius: 5px;
     cursor: pointer;
     margin-left: 20px;
+    transition: background 0.3s ease;
+}
+
+.rate-btn:hover {
+    background: var(--tech-blue);
 }
 
 .hero {
@@ -62,7 +69,7 @@ nav a {
     max-width: 700px;
     margin: 40px auto;
     padding: 10px;
-    border: 2px solid var(--dz-green);
+    border: 2px solid var(--tech-blue);
     border-radius: 12px;
     background: #fff;
 }
@@ -84,11 +91,11 @@ nav a {
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    border-top: 3px solid var(--dz-red);
+    border-top: 3px solid var(--vault-navy);
 }
 
 footer {
-    background: #222;
+    background: var(--vault-navy);
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -99,4 +106,9 @@ footer {
     color: #bbb;
     text-decoration: none;
     margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.lang-switch a:hover {
+    color: var(--tech-blue);
 }
